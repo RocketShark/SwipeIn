@@ -1,0 +1,27 @@
+# project: cj31qoph37xlf0101lrlpxp2d
+# version: 1
+
+type Class implements Node {
+  createdAt: DateTime!
+  daysOfWeek: [Int!]!
+  id: ID! @isUnique
+  school: String!
+  updatedAt: DateTime!
+}
+
+type File implements Node {
+  contentType: String!
+  createdAt: DateTime!
+  id: ID! @isUnique
+  name: String!
+  secret: String! @isUnique
+  size: Int!
+  updatedAt: DateTime!
+  url: String! @isUnique
+}
+
+type User implements Node {
+  createdAt: DateTime!
+  id: ID! @isUnique
+  updatedAt: DateTime!
+}
